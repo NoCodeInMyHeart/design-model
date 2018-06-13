@@ -19,9 +19,9 @@ public class AbstractFactoryTest {
         emailServer.select();
         emailSend.send();
 
-        ServerSelect emailServer1 = serverFactory.serverSelect("baidu");
-        Send emailSend1 = sendFactory.send("sms");
-        emailServer1.select();
-        emailSend1.send();
+        ServerSelect smsServer = serverFactory.serverSelect("baidu");
+        Send smsSend = sendFactory.send("sms");
+        smsServer.select();
+        smsSend.send();
     }
 }
