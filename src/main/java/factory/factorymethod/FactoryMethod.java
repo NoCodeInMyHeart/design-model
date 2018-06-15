@@ -10,6 +10,9 @@ import factory.Send;
  * @date: ${date} ${time}
  */
 public interface FactoryMethod {
-
+    /**
+     * 发送方式选择接口
+     * @return
+     */
     Send producer();
 }

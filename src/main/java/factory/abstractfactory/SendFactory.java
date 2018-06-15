@@ -9,16 +9,21 @@ import factory.SmsSend;
  * @date: ${date} ${time}
  */
 public class SendFactory extends AbstractFactory{
+    private static final String EMAIL_SEND = "email";
+    private static final String SMS_SEND = "sms";
+
+    @Override
     public ServerSelect serverSelect(String server) {
         return null;
     }
 
+    @Override
     public Send send(String sendType) {
-        if (sendType == null) return null;
+        if (sendType == null){ return null;}
         Send send = null;
-        if ("email".equals(sendType)){
+        if (EMAIL_SEND.equals(sendType)){
             send = new EmailSend();
-        }else if ("sms".equals(sendType)){
+        }else if (SMS_SEND.equals(sendType)){
             send = new SmsSend();
         }
         return send;

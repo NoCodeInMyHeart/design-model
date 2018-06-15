@@ -9,6 +9,7 @@ public class Cola implements Drink{
         System.out.println("我喝可乐");
     }
 
+    @Override
     public Drink clone() {
         return new Cola();
     }

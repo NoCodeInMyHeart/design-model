@@ -8,6 +8,17 @@ import factory.Send;
  * @date: ${date} ${time}
  */
 public abstract class AbstractFactory {
+    /**
+     * 服务器选择
+     * @param server
+     * @return
+     */
     public abstract ServerSelect serverSelect(String server);
+
+    /**
+     * 发送方式选择
+     * @param send
+     * @return
+     */
     public abstract Send send(String send);
 }

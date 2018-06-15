@@ -7,17 +7,21 @@ import factory.Send;
  * @date: ${date} ${time}
  */
 public class ServerFactory extends AbstractFactory {
+    private static final String ALI_SERVER = "ali";
+    private static final String BAIDU_SERVE = "baidu";
+    @Override
     public ServerSelect serverSelect(String server) {
-        if (server == null) return null;
+        if (server == null){ return null;}
         ServerSelect serverSelect = null;
-        if ("ali".equals(server)){
+        if (ALI_SERVER.equals(server)){
             serverSelect = new AliServer();
-        }else if ("baidu".equals(server)){
+        }else if (BAIDU_SERVE.equals(server)){
             serverSelect = new BaiduServer();
         }
         return serverSelect;
     }
 
+    @Override
     public Send send(String send) {
         return null;
     }

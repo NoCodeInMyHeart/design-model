@@ -5,7 +5,11 @@ package singleton;
  * @author: ${user}
  * @date: ${date} ${time}
  */
+@SuppressWarnings("AlibabaEnumConstantsMustHaveComment")
 public enum SingletonEnum {
+    /**
+     * 用于创建单例学生类
+     */
     STUDENT;
     private Student student;
     private SingletonEnum(){
