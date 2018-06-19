@@ -5,7 +5,7 @@ package bridge;
  * @author: ${user}
  * @date: ${date} ${time}
  */
-public abstract class Bridge {
+public abstract class AbstractBridge {
     private Sourceable source;
 
     public void method(){

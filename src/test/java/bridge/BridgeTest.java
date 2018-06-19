@@ -8,7 +8,7 @@ public class BridgeTest {
 
     public static void main(String[] args) {
 
-        Bridge bridge = new MyBridge();
+        AbstractBridge bridge = new MyBridge();
 
         /*调用第一个对象*/
         Sourceable source1 = new SourceSub1();
