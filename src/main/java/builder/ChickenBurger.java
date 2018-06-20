@@ -5,6 +5,7 @@ package builder;
  * @date: ${date} ${time}
  */
 public class ChickenBurger extends AbstractBuger {
+    @Override
     public String name() {
         return "ChickenBurger";
     }

@@ -12,6 +12,7 @@ public class ObjectAdapter implements Ps2{
         this.usber = usber;
     }
 
+    @Override
     public void isPs2() {
         usber.isUsb();
     }

@@ -6,6 +6,7 @@ package builder;
  */
 abstract class AbstractBuger implements Item {
 
+    @Override
     public Pack pack() {
         return new Wrapper();
     }
@@ -14,5 +15,6 @@ abstract class AbstractBuger implements Item {
      * 价格
      * @return
      */
+    @Override
     public abstract  Float price();
 }

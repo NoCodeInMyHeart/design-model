@@ -9,6 +9,7 @@ import factory.factorymethod.FactoryMethod;
  * @date: ${date} ${time}
  */
 public class SmsFactory implements FactoryMethod {
+    @Override
     public Send producer() {
         return new SmsSend();
     }

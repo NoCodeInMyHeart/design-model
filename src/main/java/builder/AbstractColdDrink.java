@@ -6,6 +6,7 @@ package builder;
  */
  @SuppressWarnings("ALL")
  abstract class AbstractColdDrink implements Item{
+    @Override
     public Pack pack() {
         return new Bottle();
     }
@@ -14,5 +15,6 @@ package builder;
      * 价格
      * @return
      */
+    @Override
     public abstract Float price();
 }

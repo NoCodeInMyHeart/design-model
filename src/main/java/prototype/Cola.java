@@ -5,6 +5,7 @@ package prototype;
  * @date: ${date} ${time}
  */
 public class Cola implements Drink{
+    @Override
     public void drink() {
         System.out.println("我喝可乐");
     }

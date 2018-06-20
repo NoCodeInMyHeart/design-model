@@ -5,6 +5,7 @@ package builder;
  * @date: ${date} ${time}
  */
 public class Pepsi extends AbstractColdDrink{
+    @Override
     public String name() {
         return "百世可乐";
     }

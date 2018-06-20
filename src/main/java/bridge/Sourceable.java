@@ -8,5 +8,5 @@ public interface Sourceable {
     /**
      * 公共方法
      */
-    public void method();
+    void method();
 }
